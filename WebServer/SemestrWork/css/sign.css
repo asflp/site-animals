@@ -1,0 +1,132 @@
+.window {
+    height: 97vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    display: flex;
+    width: 470px;
+    padding: 0 100px;
+    align-items: center;
+    align-content: center;
+    background-color: #E5EFF8;
+}
+
+.image__img {
+    width: 470px;
+}
+
+.text {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.text__header {
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 100px 0 30px;
+}
+
+label {
+    color: #7C838A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 20px;
+    background: rgba(176, 186, 195, 0.40);
+    border: none;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.form__first {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    width: 35%;
+}
+
+.surname {
+    display: flex;
+    width: 60%;
+}
+
+.form__second {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.email {
+    margin-top: 40px;
+}
+
+.button {
+    display: flex;
+    margin-top: 30px;
+    width: 40%;
+    background-color: #E5EFF8;
+    border-radius: 30px 20px;
+    border: none;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.or {
+    color: #B0BAC3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 25px;
+}
+
+.bottom {
+    color: #7C838A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    color: #6EB6FF;
+    font-weight: 600;
+}
+
+p {
+    color: red;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 0 20px;
+}
+
+.error {
+    border: 1px solid red;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизация</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="css/sign.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<main>
+    <div class="window">
+        <div class="image">
+            <img class="image__img" src="images/sign/login.png" alt="beautiful image">
+        </div>
+
+        <div class="text">
+            <div class="text__header">Войдите в свой аккаунт</div>
+
+            <form class="form__second">
+                <label class="email">
+                    Никнейм
+                    <input id="nickname" type="text" placeholder="Введите ник">
+                    <p id="nickname_error"></p>
+                </label>
+
+                <label class="email">
+                    Пароль
+                    <input id="password" type="password" placeholder="Введите пароль">
+                    <p id="password_error"></p>
+                </label>
+            </form>
+
+            <button id="button" class="button">Войти</button>
+
+            <div class="or">-ИЛИ-</div>
+
+            <div class="bottom">
+                Нет аккаунта?
+                <a href="http://localhost:5000/signup">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/sign-in.js"></script>
+
+</body>
+</html>

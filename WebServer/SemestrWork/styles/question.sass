@@ -1,0 +1,214 @@
+@import "colors"
+@import "fonts"
+
+.question
+  border-radius: 15px
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25)
+  width: 850px
+  margin: 50px 0 30px 30px
+  padding-bottom: 30px
+
+.question_header
+  display: flex
+  flex-direction: row
+  padding: 25px 25px 30px 50px
+  height: 90px
+
+  &__profile
+    display: flex
+    flex-direction: row
+    align-items: center
+    cursor: pointer
+
+    img
+      border-radius: 50px
+      border: 2px solid $pink
+      width: 73px
+      height: 73px
+
+  &__text
+    display: flex
+    flex-direction: column
+    margin-left: 19.8px
+
+    &__name
+      @include font-master(16px, 500)
+      color: #4C535F
+
+    &__nickname
+      @include font-master(18px, 500)
+      color: #3c3f44
+      line-height: 22px
+
+  button
+    display: flex
+    height: 38px
+    background-color: $easy-blue
+    color: white
+    @include font-master(18px, 500)
+    padding: 0 26px
+    border-radius: 40px
+    justify-content: center
+    align-items: center
+    margin-top: auto
+    margin-left: auto
+
+  &__img
+    height: 40px
+    margin-left: 30px
+    margin-top: auto
+    cursor: pointer
+
+.question_main
+  display: flex
+  flex-direction: column
+  margin: 0 60px
+  gap: 40px
+  color: $dark-indigo
+
+  &__title
+    @include font-master(24px, 700)
+
+  &__text
+    @include font-master(18px, 600)
+
+.responses
+  display: flex
+  flex-direction: column
+  padding: 64px 60px 35px
+
+  img
+    width: 100%
+
+  &__pre
+    display: flex
+    flex-direction: row
+    @include font-master(18px, 500)
+    padding: 0
+    color: #999
+    margin-bottom: 17px
+
+    button
+      display: flex
+      border-radius: 40px
+      background-color: $easy-blue
+      @include font-master(16px, 600)
+      margin-left: 9px
+      padding: 5px 9px
+      color: white
+
+  &__form
+    display: flex
+    flex-direction: column
+    border-radius: 20px
+    background-color: $primary-pink
+    padding: 10px 12px 14px 10px
+
+    div
+      display: flex
+      flex-direction: row
+      gap: 10px
+      align-items: center
+      @include font-master(15px, 600)
+      color: $dark-indigo
+
+      img
+        height: 45px
+        width: 45px
+        border-radius: 50px
+
+    form
+      display: flex
+      margin: 12px 0 5px
+      width: 100%
+
+    label
+      display: flex
+      width: 100%
+
+    textarea
+      display: flex
+      width: 100%
+      min-width: 100%
+      background-color: $primary-pink
+      min-height: 86px
+      height: 86px
+      max-height: 130px
+      @include font-master-poppins(14px, 400)
+      color: $dark-indigo
+
+    textarea::placeholder
+      @include font-master-poppins(14px, 400)
+      color: $dark-indigo
+
+    textarea:focus
+      outline-width: 0
+
+    button
+      display: flex
+      padding: 5px 26px
+      background-color: $pink
+      color: $dark-indigo
+      @include font-master(16px, 500)
+      border-radius: 50px
+      margin-left: auto
+
+.comments
+  display: flex
+  flex-direction: column
+  gap: 20px
+  padding: 0 90px
+
+.comment_item
+  display: flex
+  flex-direction: column
+  border-bottom: 2px solid #E2EDE6
+
+  &__header
+    display: flex
+    flex-direction: row
+    gap: 8px
+
+    img
+      border-radius: 50px
+      height: 38px
+      width: 38px
+
+    &__text
+      display: flex
+      flex-direction: column
+      margin-bottom: 12px
+
+      &__nick
+        color: $dark-indigo
+        @include font-master-poppins(14px, 500)
+
+      &__date
+        color: #8D8080
+        @include font-master-poppins(12px, 400)
+
+  &__text
+    @include font-master-poppins(15px, 500)
+    color: $dark-indigo
+
+  &__reactions
+    display: flex
+    flex-direction: row
+    gap: 8px
+    align-items: center
+    margin: 10px 0 15px
+
+    div
+      display: flex
+      flex-direction: row
+      gap: 3px
+      align-items: center
+
+      img
+        height: 24px
+        width: 24px
+        cursor: pointer
+
+      p
+        color: $pink
+        @include font-master-poppins(12px, 400)

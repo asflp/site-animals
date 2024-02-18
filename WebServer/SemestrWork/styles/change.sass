@@ -1,0 +1,173 @@
+@import "fonts"
+@import "colors"
+
+.content_change
+  display: flex
+  flex-direction: column
+  margin-top: 45px
+  border-radius: 10px
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25)
+  padding: 6px 20px 35px
+
+  &__text
+    display: flex
+    flex-direction: column
+    gap: 9px
+    @include font-master(20px, 700)
+    color: $pink
+    position: relative
+    width: 669px
+
+    p
+      padding-left: 12px
+
+    &__underline
+      position: absolute
+      top: 37.5px
+      height: 3px
+      width: 230px
+      object-fit: cover
+
+  &__photos
+    display: flex
+    flex-direction: row
+    color: #4C535F
+    @include font-master(16px, 500)
+    margin-top: 19px
+    gap: 75px
+
+    div
+      display: flex
+      flex-direction: column
+      gap: 13.5px
+      cursor: pointer
+
+      div
+        display: flex
+        height: 112px
+        width: 112px
+        border-radius: 18px
+        border: 2px dashed #4C535F
+        background: #EDF2F6
+        justify-content: center
+        align-items: center
+        font-size: 12px
+        text-align: center
+        gap: 12.5px
+
+        img
+          height: 31px
+          width: 31px
+
+        p
+          padding: 0 15px
+
+        input[type=file]
+          outline: 0
+          opacity: 0
+          overflow: hidden
+          position: absolute
+          z-index: 1000
+          height: 112px
+          width: 112px
+          cursor: pointer
+
+      div:hover
+        border: 2px solid #3c3f44
+        background: #dcdede
+        color: #3c3f44
+
+  &__primary
+    display: flex
+    flex-direction: column
+    width: 100%
+
+    img
+      width: 100%
+      margin: 29px 0 28px
+
+    form
+      display: flex
+      flex-direction: column
+      @include font-master(16px, 500)
+      gap: 24px
+
+    &__first
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      gap: 33px
+
+      label
+        width: 49%
+        display: flex
+        flex-direction: column
+        gap: 5px
+
+      p
+        color: red
+        @include font-master(10px, 400)
+        margin-left: 15px
+
+      input
+        height: 52px
+        border-radius: 8px
+        border: 1px solid #E0E4EC
+        background: linear-gradient(0deg, #EDF2F6 0%, #EDF2F6 100%), #FFF
+        margin-top: 6px
+        cursor: pointer
+        padding: 0 15px
+
+      input::placeholder
+        padding: 18px 0 18px
+        color: #8D98AA
+        @include font-master(14px, 500)
+
+    &__second
+      display: flex
+
+      label
+        width: 100%
+        display: flex
+        flex-direction: column
+        gap: 5px
+
+      p
+        color: red
+        @include font-master(10px, 400)
+        margin-left: 15px
+
+      input
+        height: 136px
+        border-radius: 8px
+        border: 1px solid #E0E4EC
+        background: linear-gradient(0deg, #EDF2F6 0%, #EDF2F6 100%), #FFF
+        margin-top: 6px
+        cursor: pointer
+        padding: 0 15px
+
+      input::placeholder
+        transform: translateY(-40px)
+        vertical-align: top
+        padding: 18px 0 18px
+        color: #8D98AA
+        @include font-master(14px, 500)
+
+  &__buttons
+    display: flex
+    flex-direction: row
+    gap: 34px
+    margin-top: 42px
+    align-items: center
+
+    button
+      background-color: #818181
+      padding: 10px 31px
+      color: white
+      @include font-master(18px, 700)
+      border-radius: 50px
+
+    div
+      @include font-master(18px, 500)
+      color: #818181
+      cursor: pointer

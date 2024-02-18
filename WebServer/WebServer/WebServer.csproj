@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+<!--        <ItemGroup>-->
+<!--            <None Include="..\..\..\..\SemestrWork\**\*.*" >-->
+<!--                <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>-->
+<!--            </None>-->
+<!--        </ItemGroup>-->
+    
+        <ItemGroup>
+          <PackageReference Include="FluentValidation" Version="11.8.0" />
+          <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+          <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0-rc.2.23479.6" />
+          <PackageReference Include="Npgsql" Version="8.0.0-rc.2" />
+          <PackageReference Include="System.Runtime.Caching" Version="8.0.0-rc.2.23479.6" />
+        </ItemGroup>
+
+</Project>

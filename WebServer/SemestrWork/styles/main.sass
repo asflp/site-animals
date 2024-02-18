@@ -1,0 +1,234 @@
+@import "fonts"
+@import "colors"
+@import "profile"
+@import "change"
+@import "new-question"
+@import "all-questions"
+@import "question"
+
+*
+  margin: 0
+  border: none
+
+.header_main
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+  background-image: url("images/main/banner.jpeg")
+  background-size: 115% 195%
+  color: white
+
+  .nav
+    display: flex
+    width: auto
+    padding: 40px 130px 10px
+    align-items: center
+    align-content: center
+    justify-content: space-between
+
+    &__logo
+      display: flex
+      align-items: center
+      gap: 15px
+
+      img
+        width: 75px
+        height: 69px
+
+      div
+        @include font-master(36px, 600)
+
+    &__navigation
+      display: flex
+      gap: 23px
+      @include font-master(20px, 500)
+
+      a
+        color: inherit
+        text-decoration: inherit
+        cursor: pointer
+
+    button
+      display: flex
+      width: 115px
+      padding: 11px 14px
+      justify-content: center
+      align-items: center
+      @include font-master(20px, 600)
+      background-color: $pink
+      border-radius: 40px
+      color: white
+      cursor: pointer
+
+  .text
+    display: flex
+    flex-direction: column
+    margin: 110px 0 20px 130px
+    width: 544px
+
+    &__main
+      display: flex
+      margin: 25px 19px 0
+
+      p, span
+        @include font-master(40px, 700)
+
+      &__pink
+        color: $pink
+
+    &__other
+      display: flex
+      @include font-master(16px, 500)
+      margin: 31px 15px 0
+
+    button
+      display: flex
+      width: 210px
+      padding: 18px 13px
+      justify-content: center
+      align-items: center
+      @include font-master(18px, 600)
+      margin: 49px 0 86px 20px
+      background-color: $pink
+      color: white
+      border-radius: 40px
+      cursor: pointer
+
+
+.main
+  display: flex
+  padding: 161px 0 132px
+  width: 100%
+  flex-direction: column
+
+  .text
+    display: flex
+    flex-direction: column
+    padding: 0 300px
+    gap: 6px
+    align-items: center
+    text-align: center
+    color: $dark-indigo
+
+    &__main
+      display: flex
+      @include font-master(48px, 600)
+      line-height: 150%
+
+    &__other
+      display: flex
+      @include font-master(18px, 400)
+      line-height: 150%
+
+  .functions
+    display: flex
+    flex-direction: column
+    margin: 80px 130px
+    width: auto
+    gap: 40px
+
+    div
+      display: flex
+      flex-direction: initial
+      justify-content: space-between
+
+      div
+        display: flex
+        flex-direction: column
+        width: 22%
+        height: 384px
+        background-color: #faede5
+        align-items: center
+        padding: 50px
+        border-radius: 15px
+        justify-content: start
+
+        div
+          display: flex
+          width: 77px
+          height: 77px
+          margin-bottom: 30px
+          padding: 0
+          background-color: $pink
+          opacity: 100%
+          align-items: center
+          justify-content: center
+          color: white
+          box-shadow: 0 0 14px 4px rgba(255, 255, 255, 0.50) inset
+          border-radius: 8px
+
+          img
+            width: 45px
+            height: 45px
+
+        p
+          color: $dark-indigo
+
+    &__header
+        @include font-master(24px, 600)
+        line-height: 150%
+        margin-bottom: 10px
+
+    &__other
+      @include font-master(18px, 400)
+      line-height: 150%
+
+
+footer
+  display: flex
+  flex-direction: column
+  background-color: #F7F9FC
+  padding: 40px 88px
+
+  .content
+    display: flex
+    flex-direction: initial
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 52px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.32)
+
+    button
+      display: flex
+      height: 56px
+      width: 293px
+      border-radius: 100px
+      background: #4E8CFA
+      color: white
+      @include font-master(16px, 600)
+      letter-spacing: 0.96px
+      justify-content: center
+      align-items: center
+
+  .text
+    display: flex
+    flex-direction: column
+    align-items: start
+    gap: 16px
+    width: 448px
+    line-height: normal
+
+    img
+      height: 40px
+      width: 40px
+
+    &__header
+     @include font-master(24px, 600)
+
+    &__other
+      @include font-master(16px, 400)
+
+  .contacts
+    display: flex
+    flex-direction: initial
+    justify-content: space-between
+    @include font-master(14px, 400)
+    margin-top: 52px
+
+    div
+      display: flex
+      gap: 40px
+
+      a
+        text-decoration: none

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <link rel="icon" href="/images/recipe.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/sign.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="window">
+            <div class="image">
+                <img class="image__img" src="images/sign/reg.png" alt="beautiful image">
+            </div>
+
+            <div class="text">
+                <div class="text__header">Создайте новый аккаунт</div>
+
+                <form class="form__first">
+                    <label class="name">
+                        Имя
+                        <input id="name" type="text" placeholder="Введите имя">
+                        <p id="name_error"></p>
+                    </label>
+
+                    <label class="surname">
+                        Никнейм
+                        <input id="surname" type="text" placeholder="Придумайте никнейм">
+                        <p id="surname_error"></p>
+                    </label>
+                </form>
+
+                <form class="form__second">
+                    <label class="email">
+                        Email
+                        <input id="email" type="text" placeholder="Введите mail">
+                        <p id="email_error"></p>
+                    </label>
+
+                    <label class="email">
+                        Пароль
+                        <input id="password" type="password" placeholder="Введите пароль">
+                        <p id="password_error"></p>
+                    </label>
+                </form>
+
+                <button id="button" class="button">Зарегистрироваться</button>
+
+                <div class="or">-ИЛИ-</div>
+
+                <div class="bottom">
+                    Уже есть аккаунт?
+                    <a href="http://localhost:5000/signin">Войти</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/sign-up.js"></script>
+</body>
+</html>

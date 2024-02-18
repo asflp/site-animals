@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Вопрос</title>
+</head>
+<body>
+    <main class="profile">
+        <aside class="left_menu">
+            <img src="images/full-logo.png" alt="логотип">
+
+            <section>
+                <div id="main_text">
+                    <img src="images/menu/home.svg">
+                    Главная
+                </div>
+                <div id="forum_text">
+                    <img src="images/menu/message.svg">
+                    Форум
+                </div>
+                <div id="bookmark_text">
+                    <img src="images/menu/list.svg">
+                    Закладки
+                </div>
+                <div id="profile_text">
+                    <img src="images/menu/profile.svg">
+                    Профиль
+                </div>
+            </section>
+        </aside>
+
+        <div class="content">
+            <div id="button_back" class="back">
+                <img src="images/profile/arrow.svg">
+
+                <div class="back__text">
+                    <div class="back__text__head">Назад</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question_header">
+                    <div id="div_profile" class="question_header__profile">
+                        <img id="img_profile" src="images/profile/avatar.png">
+                        <div class="question_header__text">
+                            <div id="name_profile" class="question_header__text__name">Name</div>
+                            <div id="nickname_profile" class="question_header__text__nickname">@nickname</div>
+                        </div>
+                    </div>
+
+                    <button id="theme">Theme</button>
+
+                    <img id="bookmark" class="question_header__img" src="images/forum/empty-bookmark1.svg">
+                </div>
+
+                <div class="question_main">
+                    <div id="title" class="question_main__title">
+                        Front-end Development And Backend Developer
+                    </div>
+
+                    <div id="text" class="question_main__text">
+                        What Skills Do You Need to Become a Front End Developer?
+
+                        The three main languages you need to know well are HTML, CSS, and JavaScript. From there you can focus on frameworks, libraries, and other useful tools.
+
+                        HsTML
+                        HTML stands for HyperText Markup Language. HTML displays the content on the page like buttons, links, headings, paragraphs, and.
+                    </div>
+                </div>
+
+                <div class="responses">
+                    <img src="images/forum/line.svg">
+
+                    <div class="responses__pre">
+                        Ответы
+                        <button id="amount_comments">18</button>
+                    </div>
+
+                    <div id="form" class="responses__form">
+                        <div id="form_nickname">
+                            <img id="form_avatar" src="images/profile/avatar.png">
+                        </div>
+
+                        <form>
+                            <label>
+                                <textarea id="form_textarea" placeholder="Оставьте комментарий.." maxlength="1000"></textarea>
+                            </label>
+                        </form>
+
+                        <button id="form_button">Ответить</button>
+                    </div>
+                </div>
+
+                <div id="comments" class="comments">
+<!--                    <div class="comment_item">-->
+<!--                        <div class="comment_item__header">-->
+<!--                            <img src="images/profile/avatar.png">-->
+
+<!--                            <div class="comment_item__header__text">-->
+<!--                                <div class="comment_item__header__text__nick">@nickname</div>-->
+<!--                                <div class="comment_item__header__text__date">12.12.2023</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="comment_item__text">Well this threads, is good</div>-->
+
+<!--                        <div class="comment_item__reactions">-->
+<!--                            <div>-->
+<!--                                <img src="images/forum/empty-like.svg" id="like">-->
+<!--                                <p>0</p>-->
+<!--                            </div>-->
+
+<!--                            <div>-->
+<!--                                <img src="images/forum/empty-dislike.svg" id="dislike">-->
+<!--                                <p>0</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                 </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/js/question.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Добавить вопрос</title>
+</head>
+<body>
+
+    <main class="profile">
+        <aside class="left_menu">
+            <img src="images/full-logo.png" alt="логотип">
+
+            <section>
+                <div id="main_text">
+                    <img src="images/menu/home.svg">
+                    Главная
+                </div>
+                <div id="forum_text">
+                    <img src="images/menu/message.svg">
+                    Форум
+                </div>
+                <div id="bookmark_text">
+                    <img src="images/menu/list.svg">
+                    Закладки
+                </div>
+                <div id="profile_text">
+                    <img src="images/menu/profile.svg">
+                    Профиль
+                </div>
+            </section>
+        </aside>
+
+        <div class="logo_text">
+            pets.ru
+        </div>
+
+        <div class="content">
+            <div class="add_question">
+                <div class="add_question__header">
+
+                    <div id="profile_img" class="header_acc">
+                        <img src="images/profile/avatar.png">
+
+                        <div class="header_acc__text">
+                            <div class="header_acc__text__one">Имя</div>
+                            <div class="header_acc__text__two">@nickname</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add_question__main">
+                    <div class="add_question__main__add">
+                        <div class="add_question__text">
+                            <div class="add_question__text__one">Добавьте новый вопрос</div>
+                            <div class="add_question__text__two">Можете спросить о чем угодно</div>
+                        </div>
+
+                        <div class="add_question__form">
+                            <form>
+                                <label>
+                                    <input id="input_title" type="text" placeholder="Заголовок">
+                                </label>
+                                <p id="error_title"></p>
+
+                                <div class="add_question__form dropdown">
+                                    <button id="input_category" type="button">Категория</button>
+                                    <div id="input_category_options" class="add_question__form dropdown-options">
+                                        <div value="Собаки">Собаки</div>
+                                        <div value="Кошки">Кошки</div>
+                                        <div value="Грызуны">Грызуны</div>
+                                    </div>
+                                </div>
+                                <p id="error_category"></p>
+
+                                <label>
+                                    <textarea id="input_text" placeholder="Ваш вопрос" maxlength="1000"></textarea>
+                                </label>
+                                <p id="error_text"></p>
+                            </form>
+
+                            <button id="button_add" type="button" class="add_question__form button">Добавить вопрос</button>
+                        </div>
+                    </div>
+
+                    <div class="add_question__main__menu">
+                        <div class="add_question__main__menu__text">Меню</div>
+                        <div class="add_question__menu">
+                            <div>
+                                <p>Все вопросы</p>
+                                <section>
+                                    Категории
+                                    <div>
+                                        <div>
+                                            <img src="images/forum/helpers/dog.svg">
+                                        </div>
+                                        Собаки
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <img src="images/forum/helpers/cat.svg">
+                                        </div>
+                                        Кошки
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <img src="images/forum/helpers/mouse.svg">
+                                        </div>
+                                        Грызуны
+                                    </div>
+                                </section>
+                            </div>
+                            <div>
+                                <p>Добавить вопрос</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/new-question.js"></script>
+</body>
+</html>

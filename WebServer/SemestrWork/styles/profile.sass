@@ -1,0 +1,351 @@
+@import "colors"
+@import "fonts"
+
+body
+  margin: 0
+  width: 100%
+  position: relative
+
+.left_menu
+  display: flex
+  flex-direction: column
+
+  img
+    height: 180px
+    width: auto
+    cursor: pointer
+
+  section
+    display: flex
+    flex-direction: column
+    margin-left: 75px
+    gap: 30px
+    position: fixed
+    top: 170px
+
+    div
+      display: flex
+      flex-direction: row
+      justify-content: start
+      margin: 0
+      gap: 20px
+      align-items: center
+      @include font-master(18px, 600)
+      cursor: pointer
+
+      img
+        height: 28px
+        width: 28px
+
+.profile
+  margin: 0 110px 0 0
+  display: flex
+  flex-direction: row
+
+.content
+  display: flex
+  flex-direction: column
+  margin-left: 140px
+  width: calc(100vw - 435px)
+
+.back
+  display: flex
+  height: 90px
+  align-items: center
+  gap: 42px
+  cursor: pointer
+  border-radius: 25px
+  padding: 0 20px
+
+  img
+    width: 21px
+    cursor: pointer
+
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: start
+
+    &__head
+      @include font-master(20px, 700)
+      line-height: 23px
+
+    &__posts
+      @include font-master(16px, 400)
+      line-height: 18px
+      opacity: 0.6
+
+.back:hover
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25)
+
+.account
+  display: flex
+  flex-direction: column
+  width: calc(100vw - 435px)
+
+  &__banner
+    height: 280px
+    width: 100%
+    position: relative
+
+  &__avatar
+    position: absolute
+    width: 150px
+    height: 150px
+    border-radius: 150px
+    border: 5px solid #FFF
+    margin: 215px 0 0 45px
+
+  &__button
+    display: flex
+    justify-content: end
+    padding: 36px 12px 0 0
+
+    button
+      width: 149px
+      height: 54px
+      color: white
+      @include font-master(20px, 700)
+      background-color: $pink
+      border-radius: 50px
+      cursor: pointer
+
+  &__text
+    display: flex
+    flex-direction: column
+    font-family: Manrope, sans-serif
+    color: black
+    padding-left: 30px
+    font-style: normal
+    line-height: normal
+    margin-top: 55px
+
+    &__name
+      font-size: 32px
+      font-weight: 800
+
+    &__nick
+      font-size: 24px
+      font-weight: 400
+      opacity: 0.6
+
+    &__desc
+      margin: 18px 0 20px
+      font-size: 18px
+      font-weight: 400
+
+  &__link
+    display: flex
+    flex-direction: row
+    padding-left: 27px
+    align-items: center
+    @include font-master(18px, 400)
+
+    img
+      height: 31px
+
+    &__city
+      margin-left: 5px
+      color: black
+      opacity: 0.6
+
+    &__link
+      margin-left: 62px
+      color: $pink
+      cursor: pointer
+
+.post
+  display: flex
+  margin: 64px 0 84px
+  flex-direction: column
+  align-content: center
+  position: relative
+
+  div
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 0 27% 0 23%
+
+  &__post
+    @include font-master(18px, 700)
+    cursor: pointer
+
+  &__liked
+    @include font-master(18px, 500)
+    cursor: pointer
+
+  &__line
+    width: 100%
+    margin: 25px 0 28px
+
+  &__underline
+    position: absolute
+    top: 48px
+    left: 34.3%
+
+  form
+    display: flex
+    height: auto
+    margin: 0 48px 0 28px
+    border-radius: 30px
+    border: 1px solid #000
+    justify-content: space-between
+    padding: 20px 30px
+    align-items: center
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10)
+    gap: 10px
+
+    img
+      height: 38px
+      width: 38px
+      cursor: pointer
+      position: relative
+
+    input[type=file]
+      display: flex
+      margin-left: 90%
+      outline: 0
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      top: 115px
+      left: -15px
+      z-index: 1000
+      height: 38px
+      width: 38px
+      cursor: pointer
+
+    textarea::placeholder
+      @include font-master(18px, 600)
+      color: $dark-indigo
+
+    label
+      width: 90%
+      height: auto
+
+    textarea
+      width: 100%
+      @include font-master-poppins(18px, 400)
+      min-height: 50px
+      max-height: 100px
+      max-width: 100%
+      cursor: pointer
+
+    textarea:focus
+      outline-width: 0
+
+  button
+    border-radius: 50px
+    width: 205px
+    background-color: $dark-indigo
+    height: 54px
+    color: white
+    @include font-master(20px, 700)
+    margin: 29px 0 0 45px
+    cursor: pointer
+
+.posts
+  display: flex
+  flex-direction: column-reverse
+  margin: 0 48px 85px 19px
+  gap: 20px
+
+.post_item
+  display: flex
+  flex-direction: row
+  padding: 10px 20px 20px 20px
+  gap: 15px
+
+  &__avatar
+    height: 60px
+    width: 60px
+    border-radius: 60px
+    cursor: pointer
+
+  &__container
+    display: flex
+    flex-direction: column
+    width: 100%
+
+  &__head
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    cursor: pointer
+
+    &__text
+      display: flex
+      flex-direction: row
+      gap: 5px
+      align-items: flex-end
+
+    &__img
+      display: inline-block
+      position: relative
+
+      img
+        width: 17px
+        cursor: pointer
+
+      div
+        color: red
+        display: none
+        position: absolute
+        overflow: auto
+        border: 1px solid #bebebe
+        width: 550%
+        @include font-master(16px, 500)
+        height: 32px
+
+      div:hover
+        background-color: #c0bfbf
+        border-radius: 5px
+
+    &__img:hover .div
+      display: flex
+      align-items: center
+      justify-content: center
+
+    &__name
+      @include font-master(20px, 700)
+      line-height: 27px
+
+    &__nick
+      @include font-master(18px, 400)
+      line-height: 26px
+      opacity: 0.6
+
+  &__text
+    display: flex
+    @include font-master(18px, 400)
+    padding: 5px 37px 22px 0
+    max-width: 100%
+    word-wrap: anywhere
+    word-break: break-word
+    gap: 15px
+    flex-direction: column
+
+    img
+      object-fit: contain
+      height: auto
+      width: auto
+      max-height: 400px
+      max-width: 600px
+
+  &__like
+    display: flex
+    flex-direction: row
+    gap: 10px
+    align-items: center
+    cursor: pointer
+
+    div
+      @include font-master(16px, 400)
+      color: #536471
+
+.selected_img
+  height: 70px
+  width: 70px
+  cursor: pointer
+  position: relative

@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  border: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/main/banner.jpeg");
+  background-size: 115% 195%;
+  color: white;
+}
+header .nav {
+  display: flex;
+  width: auto;
+  padding: 40px 130px 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+header .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .nav__logo img {
+  width: 75px;
+  height: 69px;
+}
+header .nav__logo div {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+header .nav__navigation {
+  display: flex;
+  gap: 23px;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+header .nav button {
+  display: flex;
+  width: 115px;
+  padding: 11px 14px;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  background-color: #FFA2DF;
+  border-radius: 40px;
+  color: white;
+}
+header .text {
+  display: flex;
+  flex-direction: column;
+  margin: 110px 0 20px 130px;
+  width: 544px;
+}
+header .text__main {
+  display: flex;
+  margin: 25px 19px 0;
+}
+header .text__main p, header .text__main span {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+header .text__main__pink {
+  color: #FFA2DF;
+}
+header .text__other {
+  display: flex;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin: 31px 15px 0;
+}
+header .text button {
+  display: flex;
+  width: 210px;
+  padding: 18px 13px;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin: 49px 0 86px 20px;
+  background-color: #FFA2DF;
+  color: white;
+  border-radius: 40px;
+}
+
+main {
+  display: flex;
+  padding: 161px 0 132px;
+  width: 100%;
+  flex-direction: column;
+}
+main .text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 300px;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  color: #131C61;
+}
+main .text__main {
+  display: flex;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 150%;
+}
+main .text__other {
+  display: flex;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 150%;
+}
+main .functions {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 130px;
+  width: auto;
+  gap: 40px;
+}
+main .functions div {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+}
+main .functions div div {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 384px;
+  background-color: #fff3fa;
+  align-items: center;
+  padding: 50px;
+  border-radius: 15px;
+  justify-content: start;
+}
+main .functions div div div {
+  display: flex;
+  width: 77px;
+  height: 77px;
+  margin-bottom: 30px;
+  padding: 0;
+  background-color: #FFA2DF;
+  opacity: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 0 14px 4px rgba(255, 255, 255, 0.5) inset;
+  border-radius: 8px;
+}
+main .functions div div div img {
+  width: 45px;
+  height: 45px;
+}
+main .functions div div p {
+  color: #131C61;
+}
+main .functions__header {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+main .functions__other {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 150%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F9FC;
+  padding: 40px 88px;
+}
+footer .content {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 52px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+}
+footer .content button {
+  display: flex;
+  height: 56px;
+  width: 293px;
+  border-radius: 100px;
+  background: #4E8CFA;
+  color: white;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.96px;
+  justify-content: center;
+  align-items: center;
+}
+footer .text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  width: 448px;
+  line-height: normal;
+}
+footer .text img {
+  height: 40px;
+  width: 40px;
+}
+footer .text__header {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+footer .text__other {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+footer .contacts {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 52px;
+}
+footer .contacts div {
+  display: flex;
+  gap: 40px;
+}
+footer .contacts div a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

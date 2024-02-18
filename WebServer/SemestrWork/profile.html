@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Профиль</title>
+</head>
+<body>
+
+    <main class="profile">
+        <aside class="left_menu">
+            <img src="images/full-logo.png" alt="логотип">
+
+            <section>
+                <div id="main_text">
+                    <img src="images/menu/home.svg">
+                    Главная
+                </div>
+                <div id="forum_text">
+                    <img src="images/menu/message.svg">
+                    Форум
+                </div>
+                <div id="bookmark_text">
+                    <img src="images/menu/list.svg">
+                    Закладки
+                </div>
+                <div id="profile_text">
+                    <img src="images/menu/profile.svg">
+                    Профиль
+                </div>
+            </section>
+        </aside>
+
+        <div class="content">
+            <div id="back_button" class="back">
+                <img src="images/profile/arrow.svg">
+
+                <div class="back__text">
+                    <div class="back__text__head">Выйти из аккаунта</div>
+                </div>
+            </div>
+
+            <section class="account">
+                <img id="banner" class="account__banner" src="images/profile/baner.jpg">
+                <img id="avatar" class="account__avatar" src="images/profile/avatar.png">
+
+                <div class="account__button">
+                    <button id="button_change">Изменить</button>
+                </div>
+
+                <div class="account__text">
+                    <div id="account_name" class="account__text__name">Имя</div>
+                    <div id="account_nick" class="account__text__nick">@nickname</div>
+                    <div id="account_desc" class="account__text__desc">собаковод, эксперт по черепахам</div>
+                </div>
+
+                <div class="account__link">
+                    <img src="images/profile/location.svg">
+                    <div id="account_city" class="account__link__city">Казань</div>
+                    <div id="account_link" class="account__link__link">t.me/boburjon_mavlonov</div>
+                </div>
+            </section>
+
+            <section id="form" class="post">
+                <div>
+                    <div id="usual_post" class="post__post">Посты</div>
+                    <div id="liked_post" class="post__liked">Нравится</div>
+                </div>
+
+                <img class="post__line" src="images/profile/line.svg">
+                <img  id="post__underline" class="post__underline" src="images/profile/underline.svg">
+
+                <form id="form_add_post">
+                    <label>
+                        <textarea id="input_post" placeholder="Что у Вас нового?"></textarea>
+                    </label>
+                    <img src="images/profile/camera.svg" id="img_post">
+                    <input type="file" id="input_img_post">
+                </form>
+
+                <button id="add_post">Добавить</button>
+            </section>
+
+            <section id="posts" class="posts">
+<!--                <div class="post_item">-->
+<!--                    <img class="post_item__avatar" src="images/profile/avatar.png">-->
+
+<!--                    <div class="post_item__container">-->
+<!--                        <div class="post_item__head">-->
+<!--                            <div class="post_item__head__text">-->
+<!--                                <div class="post_item__head__name">Name</div>-->
+<!--                                <div class="post_item__head__nick">@nickname · Apr 1</div>-->
+<!--                            </div>-->
+
+<!--                            <div class="post_item__head__img">-->
+<!--                                <img src="images/profile/more.svg">-->
+<!--                                <div class="post_item__head__img div">Удалить</div>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+<!--                        <div class="post_item__text">Lorem lorem lorem lorem lorem-->
+<!--                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem-->
+<!--                            lorem lorem lorem lorem lorem aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+
+<!--                            <img src="images/profile/camera.svg">-->
+<!--                        </div>-->
+
+<!--                        <div class="post_item__like">-->
+<!--                            <img src="images/profile/empty-like.svg">-->
+<!--                            <div>0</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </section>
+        </div>
+
+    </main>
+
+    <script src="/js/profile.js"></script>
+</body>
+</html>
