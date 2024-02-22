@@ -9,10 +9,14 @@
 <li>СУБД PostgreSQL</li>
 <li>Для работы с базой данных библиотека npgsql</li>
 <li>Для обращения к внешним API HttpClient</li>
+<li>Хранение картинок в API ImgBB</li>
 <li>Для валидации FluentValidation</li>
 <li>Кеширование в IMemoryCash</li>
 <li>Session, Cookie</li>
 </ul>
+
+Схема базы данных:
+<img src="WebServer/SemestrWork/images/img.png">
 
 <h3>Реализованы следующие пользовательские сценарии:</h3>
 <ul>
